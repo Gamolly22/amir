@@ -100,7 +100,7 @@ class _SettingsPageState extends State<SettingsPage> {
   }
 
   void openWhatsAppChat() async {
-    final phoneNumber = "201554194749"; 
+    final phoneNumber = "201554194749";
     final message = Uri.encodeComponent("مرحبًا، لدي شكوى أود إرسالها.");
     final url = "https://wa.me/$phoneNumber?text=$message";
 
@@ -180,13 +180,10 @@ class _SettingsPageState extends State<SettingsPage> {
                 ),
               ),
             ),
-
             const SizedBox(height: 40),
-
-          
             const Center(
               child: Text(
-                "أصدار 1.0.2",
+                "اصدار 1.0.0+3",
                 style: TextStyle(
                   fontSize: 14,
                   color: Colors.grey,

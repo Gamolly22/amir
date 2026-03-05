@@ -1,4 +1,4 @@
-package com.dembly.flutter_application_1
+package com.dembly.alamir_app
 
 import io.flutter.embedding.android.FlutterActivity
 
