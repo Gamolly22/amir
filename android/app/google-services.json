@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "310600942590",
+    "project_id": "amir-b7dcc",
+    "storage_bucket": "amir-b7dcc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310600942590:android:ba9bd961d5ca1dcd4336af",
+        "android_client_info": {
+          "package_name": "com.dembly.alamir_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl-WBxiASr18bZjXhBdRgI-T_OW4xaQ-8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

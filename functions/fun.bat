@@ -1,0 +1,1 @@
+cd /d D:\amir\functions && npm run lint -- --fix && cd /d D:\amir && firebase deploy --only functions --project amir-b7dcc

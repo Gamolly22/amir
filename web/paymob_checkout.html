@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Paymob Checkout</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 16px;
+      background: #f7f7f7;
+    }
+    h3 {
+      text-align: center;
+    }
+    #btn {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>الدفع عبر Paymob</h3>
+  <div id="btn"></div>
+
+  <!-- Paymob Elements -->
+  <script src="https://flashapi.paymob.com/paymob-elements.js"></script>
+
+  <script>
+    // اقرأ القيم من الـ query string
+    const qs = new URLSearchParams(window.location.search);
+    const publicKey = qs.get("pk");
+    const clientSecret = qs.get("cs");
+
+    if (!publicKey || !clientSecret) {
+      document.body.innerHTML =
+        "<h3 style='color:red;text-align:center'>Missing public key or client secret</h3>";
+    } else {
+      // Initialize Paymob
+      const paymob = Paymob(publicKey);
+
+      // Create checkout button
+      const checkoutBtn = paymob.checkoutButton({
+        client_secret: clientSecret
+      });
+
+      // Mount button
+      checkoutBtn.mount("#btn");
+    }
+  </script>
+</body>
+</html>
